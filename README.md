@@ -1,5 +1,7 @@
 # Orbital Solar Insight
 
+## Equipe
+
 - Carolina Cavalli Machado | RM: 552925
 - Eduardo Mazelli | RM:553236
 - Joseh Gabriel Trimboli Agra | RM:553094
@@ -198,10 +200,6 @@ O notebook usa exatamente os mesmos módulos de `src/`, garantindo paridade com 
 - **Granularidade espacial:** ~50 km/píxel — agregação adequada para política regional, não para um telhado específico.
 - **Sazonalidade ENSO:** 10 anos cobrem ~2 ciclos completos — extender para 30 anos reduz viés de período.
 - **Cluster com n=12 cidades:** silhueta de 0,40 indica separação moderada — mais cidades reforçariam a estabilidade.
-
-## Equipe
-
-Projeto desenvolvido para a disciplina de **IA / Machine Learning** — FIAP, Global Solution 2026.
 
 ## Licença
 
