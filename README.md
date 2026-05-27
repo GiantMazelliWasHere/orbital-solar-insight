@@ -1,5 +1,8 @@
 # Orbital Solar Insight
 
+> **FIAP — Global Solution 2026 · IA e Machine Learning com dados de temática espacial**
+> Investigação analítica do potencial solar e dos perfis climáticos urbanos brasileiros usando dados de satélite da **NASA POWER**.
+
 ## Equipe
 
 - Carolina Cavalli Machado | RM: 552925
@@ -7,9 +10,6 @@
 - Joseh Gabriel Trimboli Agra | RM:553094
 - Lucas Masaki Nagahama  | RM:553084
 - Pedro Henrique de Assumção Lima | RM:552746
-
-> **FIAP — Global Solution 2026 · IA e Machine Learning com dados de temática espacial**
-> Investigação analítica do potencial solar e dos perfis climáticos urbanos brasileiros usando dados de satélite da **NASA POWER**.
 
 ## Sumário executivo
 
@@ -47,25 +47,33 @@ orbital-solar-insight/
 ├── data/
 │   ├── raw/              # CSVs por cidade vindos da API NASA POWER
 │   └── processed/        # Dataset consolidado, métricas e clusters
+│
 ├── notebooks/
-│   └── 01_analysis.ipynb # Notebook exploratório
-├── src/                  # Pacote Python modular
-│   ├── config.py             — caminhos, cidades, parâmetros
-│   ├── data_acquisition.py   — chamada à API NASA POWER
-│   ├── data_preprocessing.py — limpeza, feature engineering, splits
-│   ├── eda.py                — visualizações exploratórias
-│   ├── modeling.py           — regressão (Q1)
-│   ├── clustering.py         — KMeans (Q4)
-│   └── main.py               — orquestrador
+│   └── 01_analysis.ipynb                 # Notebook exploratório (24 células)
+│
+├── src/                                  # Pacote Python modular
+│   ├── config.py                         — caminhos, cidades, parâmetros NASA POWER
+│   ├── data_acquisition.py               — chamada à API NASA POWER (com retries)
+│   ├── data_preprocessing.py             — limpeza, feature engineering, splits temporais
+│   ├── eda.py                            — visualizações exploratórias
+│   ├── modeling.py                       — regressão Q1 (Linear / RF / XGBoost)
+│   ├── clustering.py                     — KMeans + PCA para Q4
+│   └── main.py                           — orquestrador do pipeline
+│
 ├── outputs/
 │   ├── figures/          # 11 PNGs gerados pelo pipeline
 │   └── models/           # Modelo serializado (joblib)
-├── reports/
-│   ├── relatorio.md      # Relatório acadêmico
-│   ├── relatorio.pdf     # Versão PDF
-│   └── apresentacao.md   # Bullets para slide deck
-├── requirements.txt
-└── README.md
+│
+├── reports/                              # Entregáveis finais em múltiplos formatos
+│   ├── relatorio.md                      # Relatório acadêmico em Markdown (fonte)
+│   ├── relatorio.pdf                     # Relatório acadêmico em PDF
+│   ├── relatorio.docx                    # Relatório acadêmico em Word
+│   ├── apresentacao.md                   # Roteiro de apresentação em Markdown (15 slides)
+│   ├── apresentacao.pdf                  # Apresentação em PDF
+│   └── apresentacao.pptx                 # Apresentação em PowerPoint
+│
+├── requirements.txt                      # Dependências Python
+└── README.md                             # Este arquivo
 ```
 
 ## Reprodutibilidade
