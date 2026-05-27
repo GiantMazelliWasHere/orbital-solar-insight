@@ -87,7 +87,7 @@ orbital-solar-insight/
 ### Instalação
 
 ```bash
-git clone https://github.com/<seu-usuario>/orbital-solar-insight.git
+git clone https://github.com/GiantMazelliWasHere/orbital-solar-insight.git
 cd orbital-solar-insight
 python -m venv .venv
 .\.venv\Scripts\activate          # Windows PowerShell
