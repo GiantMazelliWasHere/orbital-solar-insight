@@ -1,0 +1,178 @@
+{
+  "eda": {
+    "figures": {
+      "irradiance_by_region": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\01_irradiance_by_region.png",
+      "seasonality_heatmap": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\02_seasonality_heatmap.png",
+      "correlation_matrix": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\03_correlation_matrix.png",
+      "temp_vs_irradiance": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\04_temp_vs_irradiance.png",
+      "yearly_trend": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\05_yearly_trend.png",
+      "missing_heatmap": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\06_missing_heatmap.png"
+    },
+    "descriptive_stats": {
+      "ALLSKY_SFC_SW_DWN": {
+        "Centro-Oeste": 5.59,
+        "Nordeste": 5.69,
+        "Norte": 4.93,
+        "Sudeste": 4.78,
+        "Sul": 4.43
+      },
+      "CLRSKY_SFC_SW_DWN": {
+        "Centro-Oeste": 6.9,
+        "Nordeste": 6.95,
+        "Norte": 6.69,
+        "Sudeste": 6.52,
+        "Sul": 6.29
+      },
+      "T2M": {
+        "Centro-Oeste": 23.38,
+        "Nordeste": 26.62,
+        "Norte": 27.35,
+        "Sudeste": 21.49,
+        "Sul": 18.9
+      },
+      "T2M_MAX": {
+        "Centro-Oeste": 29.77,
+        "Nordeste": 29.68,
+        "Norte": 30.38,
+        "Sudeste": 26.82,
+        "Sul": 24.48
+      },
+      "T2M_MIN": {
+        "Centro-Oeste": 17.94,
+        "Nordeste": 24.51,
+        "Norte": 24.93,
+        "Sudeste": 17.4,
+        "Sul": 14.4
+      },
+      "RH2M": {
+        "Centro-Oeste": 65.03,
+        "Nordeste": 76.86,
+        "Norte": 83.25,
+        "Sudeste": 76.84,
+        "Sul": 81.81
+      },
+      "PRECTOTCORR": {
+        "Centro-Oeste": 3.23,
+        "Nordeste": 2.99,
+        "Norte": 6.32,
+        "Sudeste": 3.68,
+        "Sul": 4.19
+      },
+      "WS2M": {
+        "Centro-Oeste": 1.99,
+        "Nordeste": 3.65,
+        "Norte": 0.71,
+        "Sudeste": 2.38,
+        "Sul": 1.64
+      },
+      "PS": {
+        "Centro-Oeste": 91.4,
+        "Nordeste": 100.8,
+        "Norte": 100.7,
+        "Sudeste": 94.58,
+        "Sul": 96.25
+      },
+      "ALLSKY_KT": {
+        "Centro-Oeste": 0.59,
+        "Nordeste": 0.58,
+        "Norte": 0.5,
+        "Sudeste": 0.52,
+        "Sul": 0.5
+      }
+    }
+  },
+  "supervised": {
+    "metrics": {
+      "CV RMSE": {
+        "LinearRegression": 0.259,
+        "RandomForest": 0.098,
+        "XGBoost": 0.077
+      },
+      "CV RMSE std": {
+        "LinearRegression": 0.009,
+        "RandomForest": 0.008,
+        "XGBoost": 0.01
+      },
+      "RMSE teste": {
+        "LinearRegression": 0.272,
+        "RandomForest": 0.107,
+        "XGBoost": 0.069
+      },
+      "MAE teste": {
+        "LinearRegression": 0.184,
+        "RandomForest": 0.069,
+        "XGBoost": 0.052
+      },
+      "R² teste": {
+        "LinearRegression": 0.969,
+        "RandomForest": 0.995,
+        "XGBoost": 0.998
+      },
+      "MAPE % teste": {
+        "LinearRegression": 6.64,
+        "RandomForest": 1.67,
+        "XGBoost": 1.26
+      }
+    },
+    "best_model": "XGBoost",
+    "pred_figure": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\07_predictions.png",
+    "feature_importance_figure": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\08_feature_importance.png"
+  },
+  "unsupervised": {
+    "diagnostics_figure": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\09_kmeans_diagnostics.png",
+    "pca_figure": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\10_cluster_pca.png",
+    "profiles_figure": "E:\\Documents\\GitHub\\orbital-solar-insight\\outputs\\figures\\11_cluster_profiles.png",
+    "silhouette": 0.4043208549390591,
+    "k": 4,
+    "profiles": {
+      "irrad_mean": {
+        "0": 4.93,
+        "1": 4.52,
+        "2": 5.89,
+        "3": 5.4
+      },
+      "irrad_std": {
+        "0": 1.06,
+        "1": 1.83,
+        "2": 1.16,
+        "3": 1.26
+      },
+      "temp_mean": {
+        "0": 27.35,
+        "1": 20.34,
+        "2": 26.88,
+        "3": 23.44
+      },
+      "temp_amplitude": {
+        "0": 5.46,
+        "1": 11.49,
+        "2": 3.03,
+        "3": 7.52
+      },
+      "rh_mean": {
+        "0": 83.25,
+        "1": 80.68,
+        "2": 77.47,
+        "3": 69.28
+      },
+      "prec_total": {
+        "0": 6.32,
+        "1": 4.12,
+        "2": 3.22,
+        "3": 2.99
+      },
+      "wind_mean": {
+        "0": 0.71,
+        "1": 2.06,
+        "2": 4.39,
+        "3": 2.09
+      },
+      "kt_mean": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.59,
+        "3": 0.57
+      }
+    }
+  }
+}

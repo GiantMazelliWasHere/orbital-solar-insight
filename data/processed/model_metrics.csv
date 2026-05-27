@@ -1,0 +1,4 @@
+Modelo,CV RMSE,CV RMSE std,RMSE teste,MAE teste,R² teste,MAPE % teste
+LinearRegression,0.259,0.009,0.272,0.184,0.969,6.64
+RandomForest,0.098,0.008,0.107,0.069,0.995,1.67
+XGBoost,0.077,0.01,0.069,0.052,0.998,1.26
